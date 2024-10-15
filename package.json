@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "@types/node": "^22.7.5",
+    "dotenv": "^16.4.5",
+    "formidable": "^3.5.1",
+    "supabase": "^1.204.3",
+    "typescript": "^5.6.3",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/formidable": "^3.4.5",
+    "@types/uuid": "^10.0.0",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2"
+  },
+  "main": "server.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon --watch \"src/**/*.ts\" --exec \"ts-node\" src/server.ts"
+  }
+}
